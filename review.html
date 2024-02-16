@@ -15,12 +15,12 @@
                 <p class="web-name"><span class="Cafe-title">Cafe</span> <span class="St-title">St.</span></p>
             </a>
             <ul>
-                <li id="home-link"><a href="homepage.html">Home</a></li>
-
+                <li id="home-link"><a href="#">Home</a></li>
+                <li><a href="#">Register</a></li>
                 <li><a href="login.html">Log In</a></li>
             </ul>
             <div class="user-icon-container">
-                <button class="user-button" onclick="window.location.href = 'profile.html';">
+                <button class="user-button">
                     <img src="userProfile.png" alt="User Icon" id="icon" class="user">
                 </button>
             </div>
@@ -126,7 +126,7 @@
         <div class="main">
             <div class="review-box">
                 <div class="unit1" id="unit1-background1">
-                    <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/364678548_7199633053384688_502780354687599346_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=LAMKIr263PAAX8N1PM6&_nc_ht=scontent.fmnl30-2.fna&oh=00_AfC1Yg00OemIVcMAUmGCVfsOAQA1zQgzOzd6SaM9UUSrvA&oe=65CF3316" class="cafe-profile">
+                    <img src="images/preludelogo.jpg" class="cafe-profile">
                     <div class="info">
                         <p class="cafe-name">Prelude Cafe and Restaurant</p>
                         <p class="cafe-address">810 Castro Street, Manila</p>
@@ -173,10 +173,10 @@
             
             <div class="review-box">
                 <div class="unit1" id="unit1-background2">
-                    <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t39.30808-6/312564151_183884667493657_2000697975756643254_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=Fqr_3T5Saf0AX8ZlWes&_nc_ht=scontent.fmnl30-1.fna&oh=00_AfBjnpLi1qDUQufjGTrK1qA8tavDhGnc4jP0zo9LFiENHQ&oe=65CFB87F" class="cafe-profile">
+                    <img src="images/cloudscapelogo.jpg" class="cafe-profile">
                     <div class="info">
-                        <p class="cafe-name">Asterisko Artisan Coffee</p>
-                        <p class="cafe-address">G/F, EGI TAFT TOWER, Taft Ave, Malate, Manila, 1004 Metro Manila</p>
+                        <p class="cafe-name">Cloudscape</p>
+                        <p class="cafe-address">3rd Floor D' Students Place, Vito Cruz Taft Avenue, Malate, Manila, Philippines</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ma temporibus ab saepe.</p>
                     </div>
                 </div>
@@ -314,7 +314,7 @@
     
             <div class="review-box">
                 <div class="unit1" id="unit1-background5">
-                    <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/337275661_121273940890010_1510316043132416308_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=LUWDP20zAfkAX9GHI4g&_nc_ht=scontent.fmnl30-2.fna&oh=00_AfAnlIwKvbjX9mt8wVRvG8AqalGZSmtYaumsoDlaoX1-bg&oe=65CFCC3A" class="cafe-profile">
+                    <img src="images/dripkofilogo.jpg" class="cafe-profile">
                     <div class="info">
                         <p class="cafe-name">Drip Kofi</p>
                         <p class="cafe-address">Unit G5, Burgundy Transpacific Place, Taft Avenue</p>
@@ -361,10 +361,10 @@
     
             <div class="review-box">
                 <div class="unit1" id="unit1-background6">
-                    <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/340636659_919249706080163_2759556571828304051_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=JgUGzxXOLusAX_ROEPF&_nc_ht=scontent.fmnl30-2.fna&oh=00_AfDSvemcaWnTkiWdzk9Ckk8PkcTvu_3m_ldDJpvJR3qgLg&oe=65D19A8B" class="cafe-profile">
+                    <img src="images/sblogo.jpg" class="cafe-profile">
                     <div class="info">
-                        <p class="cafe-name">Bo's Coffee</p>
-                        <p class="cafe-address">SMDC Green Residences, Taft Avenue</p>
+                        <p class="cafe-name">Starbucks Greencourt</p>
+                        <p class="cafe-address">Fidel A.Reyes, Malate, Manila, 1004 Metro Manila</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ma temporibus ab saepe.</p>
                     </div>
                 </div>
@@ -406,6 +406,7 @@
                 </div>
             </div>
         </div>
+
         <div class="make-a-review">
             <h2>Share Your Experience, Let Us Know Your Thoughts!</h2>
             <form action="#" method="post">
@@ -413,11 +414,11 @@
                 <select id="cafe-select" name="cafe-select" required>
                     <option value="" disabled selected>Select a Cafe</option>
                     <option value="Prelude Cafe and Restaurant">Prelude Cafe and Restaurant</option>
-                    <option value="Asterisko Artisan Coffee">Asterisko Artisan Coffee</option>
+                    <option value="Asterisko Artisan Coffee">Cloudscape</option>
                     <option value="Obscure Cafe">Obscure Cafe</option>
                     <option value="TOMO Coffee">TOMO Coffee</option>
                     <option value="Drip Kofi">Drip Kofi</option>
-                    <option value="Bo's Coffee">Bo's Coffee</option>
+                    <option value="Bo's Coffee">Starbucks Greencourt</option>
                 </select>
                 
                 <label for="your-name">Your Name:</label>
@@ -449,5 +450,4 @@
         
     </div>
 </body>
-</html> 
-  
+</html>
