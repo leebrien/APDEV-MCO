@@ -406,7 +406,48 @@
                 </div>
             </div>
         </div>
+        <div class="make-a-review">
+            <h2>Share Your Experience, Let Us Know Your Thoughts!</h2>
+            <form action="#" method="post">
+                <label for="cafe-select">Select Cafe:</label>
+                <select id="cafe-select" name="cafe-select" required>
+                    <option value="" disabled selected>Select a Cafe</option>
+                    <option value="Prelude Cafe and Restaurant">Prelude Cafe and Restaurant</option>
+                    <option value="Asterisko Artisan Coffee">Asterisko Artisan Coffee</option>
+                    <option value="Obscure Cafe">Obscure Cafe</option>
+                    <option value="TOMO Coffee">TOMO Coffee</option>
+                    <option value="Drip Kofi">Drip Kofi</option>
+                    <option value="Bo's Coffee">Bo's Coffee</option>
+                </select>
+                
+                <label for="your-name">Your Name:</label>
+                <input type="text" id="your-name" name="your-name" required>
+                
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">5 stars</option>
+                    <option value="4">4 stars</option>
+                    <option value="3">3 stars</option>
+                    <option value="2">2 stars</option>
+                    <option value="1">1 star</option>
+                </select>
+                
+                <h2>Title:</h2> 
+                <label for="review-title" id="review-title"></label> 
+                <input type="text" id="review-title" name="review-title" required>
+                
+                <br><br><hr><br>
+                
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+                
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+        
+        
         
     </div>
 </body>
-</html>
+</html> 
+  
