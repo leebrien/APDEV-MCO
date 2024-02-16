@@ -156,9 +156,11 @@ color: #4D2D18 ;
 color: #20683D;
 }
 
-.logo {
-width: 100px;
-height: 100px;
+.logo{
+    position:absolute;
+    left:10px;
+    height: 80px;
+    width: 80px;
 }
 
 .web-name {
@@ -449,7 +451,7 @@ background-position: center center;
     display: flex; 
 }
 
-.prelude {
+.review1 {
     position: relative;
     border-radius: 20px;
     height: 250px;
@@ -487,7 +489,7 @@ background-position: center center;
     display: flex; 
 }
 
-.dripkofi {
+.review2 {
     position: relative;
     border-radius: 20px;
     height: 250px;
@@ -525,7 +527,7 @@ background-position: center center;
     display: flex; 
 }
 
-.starbucks {
+.review3 {
     position: relative;
     border-radius: 20px;
     height: 250px;
