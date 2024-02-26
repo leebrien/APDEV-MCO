@@ -6,124 +6,48 @@
     <title>Cafe Reviews</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="homepage.css">
+    <script src="review.js" defer></script>
 </head>
 <body>
-    <div class="header">
+    
         <div id="navbar" class="navbar">
-            <img src="Cafe St Logo.PNG" class="logo"> 
+            <img src="Cafe St Logo.PNG" class="logooo"> 
             <a href="#" class="webname">
-                <p class="web-name"><span class="Cafe-title">Cafe</span> <span class="St-title">St.</span></p>
+                <span class="kape">Cafe</span>
+                <span class="st"> St.</span>
             </a>
             <ul>
                 <li id="home-link"><a href="homepage.html">Home</a></li>
+                <li id="review-link"><a href="review.html">View Establishments</a></li>
                 <li><a href="login.html">Log In</a></li>
-            </ul>
+            </ul>            
             <div class="user-icon-container">
                 <button class="user-button">
                     <a href="profile.html">
-                    <img src="userProfile.png" alt="User Icon" id="icon" class="user">
+                    <img src="images/usericon.png" alt="User Icon" id="icon" class="user">
                     </a>
                 </button>
             </div>
         </div>
-    </div>
-    <div class="contents">
-        <div class="dots-container">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
+    <div id="content" class="contents">
+        <div class="searchbar"> 
+            <form action="searchpage.html" method="GET">
+                <input type="text" placeholder="Search Cafes" class="type">
+                <button type="submit" class="search">Search</button>
+            </form>
         </div>
-        <div class="dots-container2">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
+        <div class="filter">
+            <button type="submit" class="buttons">Top Recommendations</button>
+            <button type="submit" class="buttons">Budget Friendly Cafes</button>
+            <button type="submit" class="buttons">Study Friendly Cafes</button>
         </div>
-        <div class="dots-container3">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-        </div>
+        <img class = "dotsrev" src="images/dots.png">
+        <img class = "dotsrev2" src="images/dots.png">
+        <img class = "dotsrev3" src="images/dots.png">
+        <img class = "dotsrev4" src="images/dots.png">
+        <img class = "dotsrev5" src="images/dots.png">
+        <img class = "dotsrev6" src="images/dots.png">
         <div class="main">
             <div class="review-box">
                 <div class="unit1" id="unit1-background1">
@@ -131,7 +55,6 @@
                     <div class="info">
                         <p class="cafe-name">Prelude Cafe and Restaurant</p>
                         <p class="cafe-address">810 Castro Street, Manila</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ma temporibus ab saepe.</p>
                     </div>
                 </div>
                 <div class="unit2">
@@ -155,30 +78,27 @@
                     </div>
                     <hr>
                     <div class="reviews">
-                        <h2>REVIEWS: </h2>
+                        <h2>Top Review:</h2>
                     </div>
                 </div>
                 <div class="unit3">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqk3cChlBKRLooYps9Jl0570TZ8U-BwASLOWrgveTgZQ&s" class="reviewer">
+                    <img src="images/elgatto.jpg" class="reviewer">
                     <div class="review-text">
                         <p>wow! what a great place and such a top tier service!!!</p>
                     </div>
                     <div class="reaction">
-                        <button class="like"><i class="fa-regular fa-thumbs-up fa-2x"></i></button>
-                        <p class="helpful">Helpful!</p>
-                        <button class="dislike"><i class="fa-regular fa-thumbs-down fa-2x"></i></button>
-                        <p class="unhelpful">Unhelpful!</p>
+                        <button class="like"><img src="images/dislike_light.png"></button>
+                        <button class="dislike"><img src="images/like_light.png"></i></button>
                     </div>
                 </div>
             </div>
-            
             <div class="review-box">
                 <div class="unit1" id="unit1-background2">
                     <img src="images/cloudscapelogo.jpg" class="cafe-profile">
                     <div class="info">
                         <p class="cafe-name">Cloudscape</p>
                         <p class="cafe-address">3rd Floor D' Students Place, Vito Cruz Taft Avenue, Malate, Manila, Philippines</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ma temporibus ab saepe.</p>
+                
                     </div>
                 </div>
                 <div class="unit2">
@@ -202,30 +122,29 @@
                     </div>
                     <hr>
                     <div class="reviews">
-                        <h2>REVIEWS: </h2>
+                        <h2>Top Review:</h2>
                     </div>
                 </div>
                 <div class="unit3">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqk3cChlBKRLooYps9Jl0570TZ8U-BwASLOWrgveTgZQ&s" class="reviewer">
+                    <img src="images/dog.jpg" class="reviewer">
                     <div class="review-text">
                         <p>wow! what a great place and such a top tier service!!!</p>
                     </div>
                     <div class="reaction">
-                        <button class="like"><i class="fa-regular fa-thumbs-up fa-2x"></i></button>
-                        <p class="helpful">Helpful!</p>
-                        <button class="dislike"><i class="fa-regular fa-thumbs-down fa-2x"></i></button>
-                        <p class="unhelpful">Unhelpful!</p>
+                        <button class="like"><img src="images/dislike_light.png"></button>
+                        <button class="dislike"><img src="images/like_light.png"></i></button>
+
                     </div>
                 </div>
             </div>
-    
+            <hr class = "divider">
             <div class="review-box">
                 <div class="unit1" id="unit1-background3">
-                    <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/297282660_116529437799424_8953372869941688210_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=rqbjCgozrxYAX96eRX-&_nc_ht=scontent.fmnl30-2.fna&oh=00_AfBOpGImJG1DcOCHGdrKNmAlxxzpG6Ak6QCCl4SngPca6w&oe=65CFB606" class="cafe-profile">
+                    <img src="images/obsecurelogo.jpg" class="cafe-profile">
                     <div class="info">
                         <p class="cafe-name">Obscure Cafe</p>
                         <p class="cafe-address">1/F, One Archer Place, Taft Avenue Corner Castro Street, Manila, Metro Manila Philippines</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ma temporibus ab saepe.</p>
+                       
                     </div>
                 </div>
                 <div class="unit2">
@@ -249,30 +168,28 @@
                     </div>
                     <hr>
                     <div class="reviews">
-                        <h2>REVIEWS: </h2>
+                        <h2>Top Review:</h2>
                     </div>
                 </div>
                 <div class="unit3">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqk3cChlBKRLooYps9Jl0570TZ8U-BwASLOWrgveTgZQ&s" class="reviewer">
+                    <img src="images/elgatto.jpg" class="reviewer">
                     <div class="review-text">
                         <p>wow! what a great place and such a top tier service!!!</p>
                     </div>
                     <div class="reaction">
-                        <button class="like"><i class="fa-regular fa-thumbs-up fa-2x"></i></button>
-                        <p class="helpful">Helpful!</p>
-                        <button class="dislike"><i class="fa-regular fa-thumbs-down fa-2x"></i></button>
-                        <p class="unhelpful">Unhelpful!</p>
+                        <button class="like"><img src="images/dislike_light.png"></button>
+                        <button class="dislike"><img src="images/like_light.png"></i></button>
                     </div>
                 </div>
             </div>
-    
+           
             <div class="review-box">
                 <div class="unit1" id="unit1-background4">
-                    <img src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t39.30808-6/395402318_758590466283225_8194857585762366253_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=ogofOAUwxskAX_eqtC5&_nc_oc=AQnhX7oWXHmDitlfxUG3UnCodZNOuZ16HawmXdQqPM11og4E9c3ZcN3pKTrHv9Xjy4I&_nc_ht=scontent.fmnl30-1.fna&oh=00_AfBejynndlMwUXgEgVHqOqWdhUMYUmsIJ1aQ-RXq3vTOEg&oe=65CF8E97" class="cafe-profile">
+                    <img src="images/tomologo.jpg" class="cafe-profile">
                     <div class="info">
                         <p class="cafe-name">TOMO Coffee</p>
                         <p class="cafe-address">University Mall, Taft Avenue</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ma temporibus ab saepe.</p>
+
                     </div>
                 </div>
                 <div class="unit2">
@@ -296,30 +213,28 @@
                     </div>
                     <hr>
                     <div class="reviews">
-                        <h2>REVIEWS: </h2>
+                        <h2>Top Review:</h2>
                     </div>
                 </div>
                 <div class="unit3">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqk3cChlBKRLooYps9Jl0570TZ8U-BwASLOWrgveTgZQ&s" class="reviewer">
+                    <img src="images/dog.jpg" class="reviewer">
                     <div class="review-text">
                         <p>wow! what a great place and such a top tier service!!!</p>
                     </div>
                     <div class="reaction">
-                        <button class="like"><i class="fa-regular fa-thumbs-up fa-2x"></i></button>
-                        <p class="helpful">Helpful!</p>
-                        <button class="dislike"><i class="fa-regular fa-thumbs-down fa-2x"></i></button>
-                        <p class="unhelpful">Unhelpful!</p>
+                        <button class="like"><img src="images/dislike_light.png"></button>
+                        <button class="dislike"><img src="images/like_light.png"></i></button>
                     </div>
                 </div>
             </div>
-    
+    <hr class="divider">
             <div class="review-box">
                 <div class="unit1" id="unit1-background5">
                     <img src="images/dripkofilogo.jpg" class="cafe-profile">
                     <div class="info">
                         <p class="cafe-name">Drip Kofi</p>
                         <p class="cafe-address">Unit G5, Burgundy Transpacific Place, Taft Avenue</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ma temporibus ab saepe.</p>
+                        
                     </div>
                 </div>
                 <div class="unit2">
@@ -343,19 +258,17 @@
                     </div>
                     <hr>
                     <div class="reviews">
-                        <h2>REVIEWS: </h2>
+                        <h2>Top Review:</h2>
                     </div>
                 </div>
                 <div class="unit3">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqk3cChlBKRLooYps9Jl0570TZ8U-BwASLOWrgveTgZQ&s" class="reviewer">
+                    <img src="images/dog.jpg" class="reviewer">
                     <div class="review-text">
                         <p>wow! what a great place and such a top tier service!!!</p>
                     </div>
                     <div class="reaction">
-                        <button class="like"><i class="fa-regular fa-thumbs-up fa-2x"></i></button>
-                        <p class="helpful">Helpful!</p>
-                        <button class="dislike"><i class="fa-regular fa-thumbs-down fa-2x"></i></button>
-                        <p class="unhelpful">Unhelpful!</p>
+                        <button class="like"><img src="images/dislike_light.png"></button>
+                        <button class="dislike"><img src="images/like_light.png"></i></button>
                     </div>
                 </div>
             </div>
@@ -366,7 +279,6 @@
                     <div class="info">
                         <p class="cafe-name">Starbucks Greencourt</p>
                         <p class="cafe-address">Fidel A.Reyes, Malate, Manila, 1004 Metro Manila</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ma temporibus ab saepe.</p>
                     </div>
                 </div>
                 <div class="unit2">
@@ -390,65 +302,22 @@
                     </div>
                     <hr>
                     <div class="reviews">
-                        <h2>REVIEWS: </h2>
+                        <h2>Top Review: </h2>
                     </div>
                 </div>
                 <div class="unit3">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqk3cChlBKRLooYps9Jl0570TZ8U-BwASLOWrgveTgZQ&s" class="reviewer">
+                    <img src="images/dog.jpg" class="reviewer">
                     <div class="review-text">
                         <p>wow! what a great place and such a top tier service!!!</p>
                     </div>
                     <div class="reaction">
-                        <button class="like"><i class="fa-regular fa-thumbs-up fa-2x"></i></button>
-                        <p class="helpful">Helpful!</p>
-                        <button class="dislike"><i class="fa-regular fa-thumbs-down fa-2x"></i></button>
-                        <p class="unhelpful">Unhelpful!</p>
+                        <button class="like"><img src="images/dislike_light.png"></button>
+                    <button class="dislike"><img src="images/like_light.png"></button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="make-a-review">
-            <h2>Share Your Experience, Let Us Know Your Thoughts!</h2>
-            <form action="#" method="post">
-                <label for="cafe-select">Select Cafe:</label>
-                <select id="cafe-select" name="cafe-select" required>
-                    <option value="" disabled selected>Select a Cafe</option>
-                    <option value="Prelude Cafe and Restaurant">Prelude Cafe and Restaurant</option>
-                    <option value="Asterisko Artisan Coffee">Cloudscape</option>
-                    <option value="Obscure Cafe">Obscure Cafe</option>
-                    <option value="TOMO Coffee">TOMO Coffee</option>
-                    <option value="Drip Kofi">Drip Kofi</option>
-                    <option value="Bo's Coffee">Starbucks Greencourt</option>
-                </select>
-                
-                <label for="your-name">Your Name:</label>
-                <input type="text" id="your-name" name="your-name" required>
-                
-                <label for="rating">Rating:</label>
-                <select id="rating" name="rating" required>
-                    <option value="5">5 stars</option>
-                    <option value="4">4 stars</option>
-                    <option value="3">3 stars</option>
-                    <option value="2">2 stars</option>
-                    <option value="1">1 star</option>
-                </select>
-                
-                <h2>Title:</h2> 
-                <label for="review-title" id="review-title"></label> 
-                <input type="text" id="review-title" name="review-title" required>
-                
-                <br><br><hr><br>
-                
-                <label for="review">Review:</label>
-                <textarea id="review" name="review" rows="4" required></textarea>
-                
-                <button type="submit">Submit Review</button>
-            </form>
-        </div>
-        
-        
-        
     </div>
 </body>
 </html>
