@@ -32,6 +32,18 @@
     transition: transform 0.5s ease;
 }
 
+
+.loc6{
+    font-family: 'Poppins', sans-serif;
+    color: #4D2D18;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 3px;
+    color: #fff;
+    margin-top: px;
+    position: absolute;
+}
+
 .slide.active {
     display: block;
     opacity: 1;
@@ -403,10 +415,14 @@ body{
     overflow-y: auto;
 }
 
+hr{
+    background-color: #4D2D18;
+}
+
 .desc{
     position: absolute;
     font-size: 12px;
-    margin-top: 280px;
+    margin-top: 315px;
     color: #4D2D18;
     margin-left: 7px;
     margin-right: 7px;
@@ -415,7 +431,7 @@ body{
 .desct{
     position: absolute;
     font-size: 12px;
-    margin-top: 50px;
+    margin-top: 35px;
     color: #4D2D18;
     margin-left: -80px;
     margin-right: 7px;
@@ -451,11 +467,11 @@ body{
 .descp{
     position: absolute;
     font-size: 12px;
-    margin-top: 100px;
+    margin-top: 80px;
     color: #4D2D18;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 7px;
-    max-width: 250px;
+    max-width: 270px;
     justify-content: center;
 }
 
@@ -726,13 +742,15 @@ body{
     font-size: 20px;
     text-decoration: none;
     text-align: center;
+    margin-left: -10px;
   }
   
   .loc {
     font-family: 'Poppins', sans-serif;
     color: #4D2D18;
-    font-size: 10px;
-    
+    font-size: 12px;
+    margin-left: -10px;
+    color: #fff;
     text-decoration: none;
     margin-top: 10px;
     text-align: center;
@@ -1098,6 +1116,23 @@ body{
     
 }
 
+.name1{
+margin-top: -20px;
+font-weight: 800;
+color: #4D2D18;
+}
+
+.logo-pre{
+    margin-top: 86px;
+    position: relative;
+
+}
+
+.logo-pre img{
+    height: 100px;
+    width: 100px;
+}
+
 .logo-tomo {
     margin-bottom: 40px; 
     margin-top: 110px;
@@ -1122,11 +1157,13 @@ body{
     margin-top: 65px; 
     margin-bottom: 50px; 
     margin-left: 100px;
+    font-weight: 800;
     font: bold;
 }
 
 .rated{
     font-family: 'Poppins', sans-serif;
+    font-weight: 800;
     color: #4D2D18;
     font-size: 17px;
     margin-top: -40px; 
@@ -1204,7 +1241,7 @@ body{
 }
 
 .logo-sb {
-    margin-top: 80px;
+    margin-top: 100px;
     margin-left: 90px;
     margin-right: 20px; 
   }
@@ -1368,25 +1405,25 @@ body{
 }
 
 .sb {
-    font-style: bold;
+    font-weight: 800;
     font-family: 'Poppins', sans-serif;
     color: #4D2D18;
     font-size: 20px;
     margin-left: -2px;
     text-decoration: none;
     text-align: center;
-    margin-top: -45px;
+
 
 }
 
 .greencourt {
     font-family: 'Poppins', sans-serif;
-    color: #4D2D18;
-    font-size: 10px;
+    color: #fff;
+    font-size: 13px;
     text-decoration: none;
     margin-top: 25px;
     text-align: center;
-    margin-left: 30px;
+    margin-left: 0px;
 }
 
 .cloudscape {
@@ -1414,15 +1451,15 @@ body{
 }
 
 .tomo {
-    font-style: bold;
+    font-weight: 800;
     font-family: 'Poppins', sans-serif;
     color: #4D2D18;
     font-size: 20px;
     text-decoration: none;
     position: absolute;
-    text-align: center;
+    
     margin-left: -70px;
-    margin-top: -50px;
+    margin-top: -60px;
 
 }
 
@@ -1461,12 +1498,34 @@ body{
 .loc4 {
     font-family: 'Poppins', sans-serif;
     color: #4D2D18;
-    font-size: 10px;
+    font-size: 12px;
     text-decoration: none;
     margin-top: 3px;
+    color: #fff;
+    margin-top: -26px;
     position: absolute;
-    margin-left: -120px;
+    margin-left: -135px;
 
+}
+
+.loc4 {
+    font-family: 'Poppins', sans-serif;
+    color: #4D2D18;
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: 3px;
+    color: #fff;
+    margin-top: -26px;
+    position: absolute;
+    
+
+}
+
+
+
+.loc2{
+    margin-left: 30px;
+    
 }
 
 
@@ -1603,6 +1662,7 @@ body{
     margin-left: 12px;
     position: absolute;
     bottom: -14px;
+    font-weight: 800;
 }
 
 .rating-obsecure {
@@ -1630,12 +1690,13 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
     margin-left: 12px;
+    font-weight: 800;
     color: #4D2D18;
     display: flex; 
     align-items: center;
     font: bold;
     position: absolute;
-    margin-top: 170px;
+    margin-top: 175px;
 }
 
 .rating-cloudscape {
@@ -1652,6 +1713,7 @@ body{
 }
 
 .rating-sb{
+    font-weight: 800;
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
     margin-left: 12px;
@@ -1660,7 +1722,7 @@ body{
     align-items: center; 
     font: bold;
     position: absolute;
-    margin-top: 380px;
+    margin-top: 400px;
 }
 
 .i-prelude, .i-drip, .i-obsecure, .i-tomo, .i-cloudscape, .i-sb
@@ -1758,9 +1820,9 @@ body{
 
 hr{
     width: 90%;
-    background-color: #4D2D18;
+    border-color: #4D2D18;
     border-width: 1px;
-    text-decoration: none;
+
 }
 
 .topreview{
@@ -1907,6 +1969,7 @@ hr{
 #closePopupBtnobsecure,#closePopupBtncloudscape, #closePopupBtntomo,
 #closePopupBtndrip, #closePopupBtnprelude, #closePopupBtnsb{
     z-index: 3;
+    cursor: pointer;;
     position: absolute;
     top: 10px;
     right: 10px;

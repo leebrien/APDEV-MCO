@@ -241,8 +241,6 @@ function showResponses7() {
 }
 
 
-
-
 window.addEventListener('click', function(event) {
     if (event.target == popupprelude) {
         popupprelude.style.display = 'none';
