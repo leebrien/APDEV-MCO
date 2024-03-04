@@ -8,7 +8,7 @@ body {
     margin-top: -1020px;
     background-color: rgb(237, 210, 174);
     overflow-x: hidden;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
     
 }
 
@@ -146,7 +146,7 @@ body {
     left: 20px;
     width: 150px;
     height: 150px;
-    opacity: 1; 
+    opacity: 0.5; 
 }
 
 .dotsrev2{
@@ -170,18 +170,18 @@ body {
 
 .dotsrev4{
     position: absolute;
-    top: 700px;
+    top: 680px;
     right: 620px;
     width: 120px;
     height: 120px;
-    opacity: 1; 
+    opacity: 0.5; 
 
 }
 
 
 .dotsrev5{
     position: absolute;
-    top: 900px;
+    top: 880px;
     left: 50px;
     width: 120px;
     height: 120px;
@@ -363,24 +363,30 @@ body {
 }
 
 .cafe-name {
+    color: #4D2D18;
     font-size: 20px;
     margin-top: -4px;
+    font-weight: 800;
 }
 
 h2{
+color: #4D2D18;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
 font-size: 17px;
 margin-top: 20px;
+margin-left: 2px;
 
+}
+
+#view-establishments-link a.active-link {
+    font-weight: 700;
 }
 
 .cafe-address {
-    font-size: 15px;
+    font-size: 12px;
     color: white;
     margin-top: -20px;
-}
-
-.info p {
-    color: #4D2D18;
 }
 
 .reviewer {
@@ -605,7 +611,6 @@ ul li:not(:last-child)::after{
     height: -30px;
     width: 980px;
 }
-
 
 .divider{
     border-color: #4D2D18;

@@ -272,9 +272,7 @@
     background-color: rgba(255, 255, 255, 0.2); 
 }
 
-.navbar button:hover {
-    background-color: rgba(255, 255, 255, 0.2); 
-}
+
 
 ul {
     margin-left: 350px;
@@ -463,7 +461,7 @@ hr{
     font-family: 'Poppins', sans-serif;
     position: absolute;
     font-size: 10px;
-    margin-top: 40px;
+    margin-top: 33px;
     color: #4D2D18;
     margin-left: -80px;
     margin-right: 7px;
@@ -489,6 +487,18 @@ hr{
     margin-left: 20px;
     margin-right: 7px;
     max-width: 250px;
+    justify-content: center;
+}
+
+.descd1{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-size: 10px;
+    color: #4D2D18;
+    margin-left: -75px;
+    margin-right: 7px;
+    max-width: 250px;
+    margin-top: 50px;
     justify-content: center;
 }
 
@@ -1319,8 +1329,8 @@ color: #4D2D18;
 
 
 .logo-cloudscape {
-    margin-bottom: 60px;
-    margin-top: 95px;
+    margin-bottom: 47px;
+
     position: relative;
 
 }
@@ -1335,7 +1345,6 @@ color: #4D2D18;
     top: 100px;
     right: -420px;
 
-    transform: translateY(-50%);
 }
 
 .next-slide-cafelist2 {
@@ -1462,7 +1471,7 @@ color: #4D2D18;
     position: absolute;
     text-align: center;
     right: 75px;
-    margin-top: -60px;
+    margin-top: -50px;
 
 }
 
@@ -1471,9 +1480,9 @@ color: #4D2D18;
     color: #fff;
     font-size: 12px;
     text-decoration: none;
-    margin-top: -60px;
+    margin-top: -17px;
     position: absolute;
-    margin-left: -120px;
+    margin-left: -140px;
 
 }
 
@@ -1700,9 +1709,22 @@ color: #4D2D18;
     font-size: 17px;
     margin-left: 12px;
     position: absolute;
-    bottom: -12px;
+    bottom: -10px;
     font-weight: 800;
 }
+
+.rating-obsecure2 {
+    font-family: 'Poppins', sans-serif;
+    color: #4D2D18;
+    font-size: 12px;
+    left: 0;
+    font-size: 17px;
+    margin-left: 12px;
+    position: absolute;
+    bottom: -14px;
+    font-weight: 800;
+}
+
 
 .rating-drip {
     font-family: 'Poppins', sans-serif;
@@ -1735,9 +1757,9 @@ color: #4D2D18;
     color: #4D2D18;
     display: flex; 
     align-items: center;
-    font: bold;
+    font-weight: 800;
     position: absolute;
-    margin-top: 140px;
+    margin-top: 136px;
     left: 0;
 }
 
@@ -1782,7 +1804,7 @@ color: #4D2D18;
     color: #4D2D18;
     display: flex; 
     align-items: center; 
-    font: bold;
+    font-weight: 600;
     margin-top: 15px;
 }
 
@@ -1851,6 +1873,7 @@ hr{
     width: 90%;
     border-color: #4D2D18;
     border-width: 1px;
+    opacity: 0.5;
 
 }
 
@@ -1897,7 +1920,7 @@ hr{
 }
 
 .name-popup{
-    font-style: bold;
+    font-weight: 600;
     font-family: 'Poppins', sans-serif;
     color: #4D2D18;
     font-size: 20px;

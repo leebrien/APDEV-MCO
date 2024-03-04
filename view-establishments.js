@@ -86,10 +86,10 @@ window.addEventListener('scroll', () => {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    var reviewLink = document.getElementById('review-link');
+    var reviewLink = document.getElementById('view-establishments-link');
     var currentLocation = window.location.href;
-    if (currentLocation.indexOf('review') !== -1) {
-        reviewLink.classList.add('active-link');
+    if (currentLocation.includes('view-establishments.html')) {
+        reviewLink.querySelector('a').classList.add('active-link');
     }
 });
 
