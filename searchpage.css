@@ -10,6 +10,15 @@ body {
     background-color: #F4E4C9;
 }
 
+h2{
+    color: #4D2D18;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+font-size: 17px;
+margin-top: 20px;
+margin-left: 2px;
+}
+
 .type {
     background-image: url("images/searchicon.png"); 
     background-size: 20px; 
@@ -43,6 +52,15 @@ body {
 
 .searchbar{
     margin-top: 30px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 20px;
+    margin-top: -30px;
+    position: relative;
 }
 
 
@@ -264,7 +282,7 @@ ul li{
 }
 
 .contents {
-    margin-top: 570px; /* Adjust as needed */
+    margin-top: 250px; /* Adjust as needed */
     margin-bottom: 20px; /* Add margin-bottom to create space below */
     width: 100%;
 
