@@ -105,15 +105,7 @@ function currentSlide(index) {
     dots[index-1].className += " active";
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    var currentPageUrl = window.location.href;
 
-
-    if (currentPageUrl === "file:///C:/Users/Justin%20Delos%20Reyes/OneDrive/Documents/Desktop/DLSU/College%20(BSCS-ST18)/2nd%20Year/Term%202/CCAPDEV/MCO1%20updated/index.html") {
-        var homeLink = document.getElementById("home-link");
-        homeLink.classList.add("bold-home-link");
-    }
-});
 
 
 window.addEventListener('scroll', () => {
@@ -267,10 +259,11 @@ function scrollFunction() {
 document.addEventListener('DOMContentLoaded', function () {
     var homeLink = document.getElementById('home-link');
     var currentLocation = window.location.href;
-    if (currentLocation.indexOf('home') !== -1) {
-        homeLink.classList.add('active-link');
+    if (currentLocation.includes('index.html')) {
+        homeLink.querySelector('a').classList.add('active-link');
     }
 });
+
 
 const returnButton = document.getElementById('returnButton');
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
 .slideshow-container {
@@ -36,11 +36,11 @@
 .loc6{
     font-family: 'Poppins', sans-serif;
     color: #4D2D18;
-    font-size: 12px;
+    font-size: 13px;
     text-decoration: none;
     margin-top: 3px;
     color: #fff;
-    margin-top: px;
+    margin-left: -7px;
     position: absolute;
 }
 
@@ -121,7 +121,7 @@
 }
 
 .active-link {
-            font-weight: bold;
+            font-weight: 700;
         }
 
  .resto {
@@ -221,10 +221,10 @@
     color: white;
 }
 
-
-.bold-home-link a {
-    font-weight: bold;
+#home-link a.active-link {
+    font-weight: 700;
 }
+
 
 .navbar {
     width: 100%;
@@ -420,8 +420,9 @@ hr{
 }
 
 .desc{
+    font-family: 'Poppins', sans-serif;
     position: absolute;
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 315px;
     color: #4D2D18;
     margin-left: 7px;
@@ -429,17 +430,19 @@ hr{
 }
 
 .desct{
+    font-family: 'Poppins', sans-serif;
     position: absolute;
-    font-size: 12px;
-    margin-top: 35px;
+    font-size: 10px;
+    margin-top: 30px;
     color: #4D2D18;
     margin-left: -80px;
     margin-right: 7px;
 }
 
 .desco{
+    font-family: 'Poppins', sans-serif;
     position: absolute;
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 30px;
     color: #4D2D18;
     margin-left: -80px;
@@ -447,6 +450,7 @@ hr{
 }
 
 .desct2{
+    font-family: 'Poppins', sans-serif;
     position: absolute;
     font-size: 10px;
     margin-top: 25px;
@@ -456,6 +460,7 @@ hr{
 }
 
 .descc{
+    font-family: 'Poppins', sans-serif;
     position: absolute;
     font-size: 10px;
     margin-top: 40px;
@@ -465,8 +470,9 @@ hr{
 }
 
 .descp{
+    font-family: 'Poppins', sans-serif;
     position: absolute;
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 80px;
     color: #4D2D18;
     margin-left: 10px;
@@ -476,9 +482,9 @@ hr{
 }
 
 .descd{
+    font-family: 'Poppins', sans-serif;
     position: absolute;
     font-size: 10px;
-    font-family: "Poppins";
     color: #4D2D18;
     margin-left: 20px;
     margin-right: 7px;
@@ -486,6 +492,17 @@ hr{
     justify-content: center;
 }
 
+.desco1{
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-size: 10px;
+    margin-top: 55px;
+    color: #4D2D18;
+    margin-left: -70px;
+    margin-right: 7px;
+   
+
+}
 
 
 .thread{
@@ -882,7 +899,7 @@ hr{
     margin-top: 65px; 
     margin-bottom: 50px;
     margin-left: 120px;
-    font: bold;
+    font-weight: 800;
 }
 
 .budget1{
@@ -892,6 +909,7 @@ hr{
     margin-top: -40px; 
     margin-bottom: 50px; 
     margin-left: 120px;
+    
 }
 
 .Discover{
@@ -902,7 +920,7 @@ hr{
     position: absolute;
     margin-bottom: 50px;
     margin-left: 100px;
-    font: bold;
+    font-weight: 800;
 }
 
 .student-friendly{
@@ -1101,7 +1119,7 @@ hr{
 
 .logo-obsecure {
     margin-bottom: 45px; 
-    margin-top: 140px;
+    margin-top: 94px;
     position: relative;
 
 }
@@ -1122,11 +1140,19 @@ font-weight: 800;
 color: #4D2D18;
 }
 
+.name2{
+    margin-top: -50px;
+    font-weight: 800;
+    color: #4D2D18;
+    text-decoration: none;
+    }
+
 .logo-pre{
     margin-top: 86px;
     position: relative;
 
 }
+
 
 .logo-pre img{
     height: 100px;
@@ -1163,7 +1189,6 @@ color: #4D2D18;
 
 .rated{
     font-family: 'Poppins', sans-serif;
-    font-weight: 800;
     color: #4D2D18;
     font-size: 17px;
     margin-top: -40px; 
@@ -1192,21 +1217,20 @@ color: #4D2D18;
     text-decoration: none;
     position: absolute;
     text-align: center;
-    margin-left: -60px;
-    margin-top: -20px;
-
+    margin-left: -70px;
+    margin-top: -48px;
+    font-weight: 800;
 }
 
 .loc3 {
     font-family: 'Poppins', sans-serif;
-    color: #4D2D18;
-    font-size: 10px;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
     text-decoration: none;
-    margin-top: 90px;
-    
-    margin-left: 10px;
+    margin-top: -15px;
+    margin-left: -130px;
     text-align: center;
-
 }
 
 .view-establishment-obsecure{
@@ -1389,18 +1413,21 @@ color: #4D2D18;
     position: absolute;
     text-align: center;
     margin-left: -42px;
-    margin-top: -45px;
+    margin-top: -58px;
+    font-weight: 800;
 
 }
 
 .burgundy {
     font-family: 'Poppins', sans-serif;
-    color: #4D2D18;
-    font-size: 10px;
+    color: #fff;
+
+    font-size: 13px;
     text-decoration: none;
     margin-top: 5px;
     position: absolute;
-    margin-left: -120px;
+    margin-left: -135px;
+    margin-top: -25px;
 
 }
 
@@ -1419,7 +1446,7 @@ color: #4D2D18;
 .greencourt {
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    font-size: 13px;
+    font-size: 12px;
     text-decoration: none;
     margin-top: 25px;
     text-align: center;
@@ -1427,7 +1454,7 @@ color: #4D2D18;
 }
 
 .cloudscape {
-    font-style: bold;
+    font-weight: 800;
     font-family: 'Poppins', sans-serif;
     color: #4D2D18;
     font-size: 20px;
@@ -1435,16 +1462,16 @@ color: #4D2D18;
     position: absolute;
     text-align: center;
     right: 75px;
-    margin-top: -45px;
+    margin-top: -60px;
 
 }
 
 .studentplace {
     font-family: 'Poppins', sans-serif;
-    color: #4D2D18;
-    font-size: 10px;
+    color: #fff;
+    font-size: 12px;
     text-decoration: none;
-    margin-top: 5px;
+    margin-top: -60px;
     position: absolute;
     margin-left: -120px;
 
@@ -1674,6 +1701,7 @@ color: #4D2D18;
     margin-left: 12px;
     position: absolute;
     bottom: -12px;
+    font-weight: 800;
 }
 
 .rating-drip {
@@ -1684,6 +1712,7 @@ color: #4D2D18;
     margin-left: -75px;
     position: absolute;
     bottom: -12px;
+    font-weight: 800;
 }
 
 .rating-prelude {
