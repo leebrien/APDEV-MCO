@@ -5,7 +5,7 @@ margin: 0;
 display: flex;
 justify-content: center;
 flex-direction: column;
-background-color: rgb(237, 210, 174);
+background-color:#F4E4C9;
 }
 
 .designdot {
@@ -236,7 +236,7 @@ background-position: center center;
     display: flex;
     justify-content: center;
     height: 147px;
-    background-color: rgb(237, 210, 174);
+    background-color: #F4E4C9;
 }
 
 .profile-lower {
@@ -244,7 +244,7 @@ background-position: center center;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(237, 210, 174);
+    background-color: #F4E4C9;
 }
 
 

@@ -84,6 +84,14 @@ window.addEventListener('scroll', () => {
     }
 });
 
+function toggleDropdown() {
+    var dropdownContent = document.getElementById("dropdownContent");
+    if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+    } else {
+        dropdownContent.style.display = "block";
+    }
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     var reviewLink = document.getElementById('view-establishments-link');

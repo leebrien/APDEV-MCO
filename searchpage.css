@@ -7,8 +7,79 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(237, 210, 174);
+    background-color: #F4E4C9;
 }
+
+.type {
+    background-image: url("images/searchicon.png"); 
+    background-size: 20px; 
+    background-position: 10px center; 
+    background-repeat: no-repeat; 
+    font-family: 'Poppins', sans-serif;
+    width: 400px; 
+    padding: 10px 40px 10px 40px; 
+    border-radius: 20px; 
+    border: 1px solid #ccc;
+    font-size: 16px; 
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    
+}
+
+.search {
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    border: none; 
+    margin-top: 170px;
+    background-color: #d1ae8d; 
+    color: white; 
+    border-radius: 20px;
+    cursor: pointer; 
+    font-size: 16px; 
+    width: 100px;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    margin-top: -1px;
+ 
+}
+
+.searchbar{
+    margin-top: 30px;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d1ae8d;
+    width:  150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+    z-index: 1;
+    left: -48px; /* Adjust the position as per your requirement */
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.dropdown-content a {
+    color: #ffff;
+    padding: 14px 18px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid transparent; /* Add border */
+    width:  113px;
+}
+
+.dropdown-content a:hover {
+    background-color: #F4E4C9;
+    border-radius: 10px;
+}
+
 
 .user-icon-container {
     margin-right: -30px; 
@@ -46,6 +117,11 @@ body {
 .logo {
     width: 100px;
     height: 100px;
+}
+
+.result{
+    color: #4D2D18;
+    font-size: 15px;
 }
 
 .results{
@@ -101,9 +177,8 @@ ul li{
     opacity: .98;
 }
 
-
 .navbar {
-    width: 100%;
+   
     height: 30px;
     position:sticky;
     top: 0;
@@ -114,7 +189,6 @@ ul li{
     transition: background-color 0.3s ease; 
     z-index: 10; 
 }
-
 
 .navbar a {
     font-size: medium;
@@ -142,7 +216,9 @@ ul li{
 .upperhr{
     height: -30px;
     width: 900px;
-
+    margin-top: 30px;
+    border-color: #4D2D18;
+    opacity: 0.5;
 }
 
 .header {
@@ -188,12 +264,15 @@ ul li{
 }
 
 .contents {
+    margin-top: 570px; /* Adjust as needed */
+    margin-bottom: 20px; /* Add margin-bottom to create space below */
     width: 100%;
-    height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: absolute; /* Add position relative */
 }
 
 .dots-container {
@@ -233,20 +312,21 @@ ul li{
     margin:10px;
 }
 
-.review-box {
 
-    width: 800px;
-    height: 500px;
+.review-box {
+    width: 500px;
+    height: 250px;
     border-radius: 15px;
     background-color: #cbaf91;
     padding: 15px;
     display: flex;
-    margin-top: 900px;
     flex-direction: column;
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
     z-index: 1;
     margin: 50px;
+    margin-bottom: -5px;
 }
+
 
 #unit1-background1 {
     height: 33%;
@@ -256,79 +336,17 @@ ul li{
     -moz-border-radius: 15px;
     margin: -15px;
     padding: 15px;
-    background-image: url(https://cdn.phonebooky.com/blog/wp-content/uploads/2023/09/05122000/prelude-cover-photo_11zon.png);
+    background-image: url(images/cafeheaders/preludeh.png);
     background-size: 100%;
     background-position: center;
-}
-
-#unit1-background2 {
-    height: 33%;
-    display: flex;
-    justify-content: start;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    margin: -15px;
-    padding: 15px;
-    background-image: url(https://img.restaurantguru.com/r858-Asterisko-Artisan-Coffee-interior.jpg);
-    background-size: 100%;
-    background-position: center;
-}
-
-#unit1-background3 {
-    height: 33%;
-    display: flex;
-    justify-content: start;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    margin: -15px;
-    padding: 15px;
-    background-image: url(https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/305580474_126827910102910_6972372413536514035_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=dd5e9f&_nc_ohc=tJMQs_83qKkAX-QlhKl&_nc_ht=scontent.fmnl30-2.fna&oh=00_AfD4_1E0FM7rjDmkpz5xZYSUV1gcj0M2a2UOz9PzQ2PI1A&oe=65CF46D2);
-    background-size: 110%;
-    background-position: center;
-}
-
-#unit1-background4 {
-    height: 33%;
-    display: flex;
-    justify-content: start;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    margin: -15px;
-    padding: 15px;
-    background-image: url(https://scontent.fmnl30-2.fna.fbcdn.net/v/t39.30808-6/395473686_758607976281474_6612308146126982656_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=783fdb&_nc_ohc=waSGIQuwHcsAX9SLAUn&_nc_ht=scontent.fmnl30-2.fna&oh=00_AfDSnHunmx_Cm_nst42oefFC3XxhlwvTSEkVfjD3pNw7sQ&oe=65D063CD);
-    background-size: 115%;
-    background-position: center;
-}
-
-#unit1-background5 {
-    height: 33%;
-    display: flex;
-    justify-content: start;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    margin: -15px;
-    padding: 15px;
-    background-image: url(https://lh3.googleusercontent.com/p/AF1QipPU4q6SOJyBJzUA4nz8b3Qcpel6cEu3NkE_oxQT=s1360-w1360-h1020);
-    background-size: 100%;
-    background-position: 90%;
-}
-
-#unit1-background6 {
-    height: 33%;
-    display: flex;
-    justify-content: start;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    margin: -15px;
-    padding: 15px;
-    background-image: url(https://scontent.fmnl30-1.fna.fbcdn.net/v/t31.18172-8/15895599_10154508024013462_9171414430509699774_o.jpg?_nc_cat=102&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=i2cgbz3ZBZEAX9Pqs7q&_nc_ht=scontent.fmnl30-1.fna&oh=00_AfD-_Q6ZqveqaXVfaIcTMg44RfUgER9_sTrTvzZJEiWa4Q&oe=65F391C7);
-    background-size: 100%;
-    background-position: top;
+    font-family: 'Poppins', sans-serif;
 }
 
 .unit2 {
     height: 33%;
     margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
 }
 
 .ratings:not(:checked) > input {
@@ -372,69 +390,111 @@ ul li{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
 
+
 .cafe-profile {
-    width: 16%;
-    height: 130px;
-    margin-right: 5px;
+    width:90px ;
+    height: 90px;
+    margin-top: -6px;
+    margin-right: 10px;
 }
 
 .cafe-name {
-    font-size: 25px;
-    margin-bottom: -5px;
-    color: white;
+    color: #4D2D18;
+    font-size: 20px;
+    margin-top: -4px;
+    font-weight: 800;
 }
 
 .cafe-address {
+    font-size: 12px;
     color: white;
-}
-
-.info p {
-    color: #381c34
+    margin-top: -20px;
 }
 
 .reviewer {
-    height: 120px;
-    width: 120px;
+    height: 35px;
+    width: 35px;
     border-radius: 100%;
+    margin-left: 110px;
+    margin-top: 40px;
 }
 
+
 .review-text {
-    width: 60%;
-    height: 100%;
+    font-size: 9px;
+    width: 300px;
+    height: 30px;
     background-color: #d3d3d3;
     margin-left: 10px;
+    margin-top: 40px;
     border-radius: 20px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-    padding-top: 5px;
-    padding-bottom: 5px;
     padding-left: 10px;
-    padding-right: 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+
 }
+
 
 .reaction {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 42px;
 }
 
 button {
     width: 45px;
 }
 
-.like:hover {
-    background-color: rgb(0, 179, 255);
+.like img, .dislike img{
+    width: 20px;
+    height: 20px;
 }
 
-.like:focus > i {
-    color: rgb(0, 81, 255);
+.like, .dislike{
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.like:hover {
+    transform: scale(1.1);
+    content: "Mark as Helpful";
+}
+
+.like:hover::after {
+    content: "Mark as Helpful";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.dislike:hover::after {
+    content: "Mark as Helpful";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
 }
 
 .dislike:hover {
-    background-color: rgb(248, 86, 86);
-}
-
-.dislike:focus > i {
-    color: rgb(248, 61, 61);
+    transform: scale(1.1);
+    content: "Mark as Unhelpful";
 }

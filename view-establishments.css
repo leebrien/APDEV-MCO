@@ -541,7 +541,7 @@ ul li{
     display:inline-block; 
     padding:0 10px; 
     position:relative;
-    margin-left: 20px;
+    margin-left: 3px;
     margin-bottom: 10px;
 }
 
@@ -550,7 +550,7 @@ ul li:not(:last-child)::after{
     border:5px solid #4D2D18;
     border-width: 5px 1px 0 0;
     position:absolute; 
-    right:3px; 
+   
     top:0; 
     height:10px;
 }
@@ -602,10 +602,45 @@ ul li:not(:last-child)::after{
     border:5px solid #4D2D18;
     border-width: 5px 1px 0 0;
     position:absolute; 
-    right:3px; 
+    
     top:0; 
     height:10px;
 }
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d1ae8d;
+    width:  150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+    z-index: 1;
+    left: -48px; /* Adjust the position as per your requirement */
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.dropdown-content a {
+    color: #ffff;
+    padding: 14px 18px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid transparent; /* Add border */
+    width:  113px;
+}
+
+.dropdown-content a:hover {
+    background-color: #F4E4C9;
+    border-radius: 10px;
+}
+
 
 .upperhr{
     height: -30px;

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe Reviews</title>
+    <title>Search Cafes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="searchpage.css">
+    <script src="searchpage.js" defer></script>
 </head>
 <body>
 
@@ -16,163 +17,78 @@
             <p class="web-name"><span class="Cafe-title">Cafe</span> <span class="St-title">St.</span></p>
         </a>
         <ul>
-            <li id="home-link"><a href="homepage.html">Home</a></li>
-            <li><a href="#">View Establishments</a></li>
+            <li id="home-link"><a href="index.html">Home</a></li>
+            <li><a href="view-establishments.html">View Establishments</a></li>
             <li><a href="login.html">Log In</a></li>
           </ul>
           <div class="user-icon-container">
-            <button class="user-button">
-                <img src="images/usericon.png" alt="User Icon" id="icon" class="user">
-            </button>
+            <div class="dropdown">
+                <button class="user-button" onclick="toggleDropdown()">
+                    <img src="images/usericon.png" alt="User Icon" id="icon" class="user">
+                </button>
+                <div class="dropdown-content" id="dropdownContent">
+                    <a href="sign-up.html">Sign Up</a>
+                    <a href="profile.html">View Profile</a>
+                </div>
+            </div>
         </div>
     </div>
     <div class="contents">
-        <div class="dots-container">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
+        <div class="searchbar"> 
+            <form action="searchpage.html" method="GET">
+                <input type="text" placeholder="Search Cafes" class="type">
+                <button type="submit" class="search">Search</button>
+            </form>
         </div>
-        <div class="dots-container2">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-        </div>
-        <div class="dots-container3">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-            <img src="dot.png" class="dot">
-        </div>
-
-        <p class = "result">Search Results: 1 out of 6 Cafes</p>
         <hr class ="upperhr">
 
-        <div class="review-box">
-            <div class="unit1" id="unit1-background1">
-                <img src="images/preludelogo.jpg" class="cafe-profile">
-                <div class="info">
-                    <p class="cafe-name">Prelude Cafe and Restaurant</p>
-                    <p class="cafe-address">810 Castro Street, Manila</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. ma temporibus ab saepe.</p>
+        <p class = "result">Search Results: 1 out of 6 Cafes</p>
+        
+
+        <div class="main">
+            <div class="review-box">
+                <div class="unit1" id="unit1-background1">
+                    <img src="images/preludelogo.jpg" class="cafe-profile">
+                    <div class="info">
+                        <p class="cafe-name">Prelude Cafe and Restaurant</p>
+                        <p class="cafe-address">810 Castro Street, Manila</p>
+                    </div>
+                </div>
+                <div class="unit2">
+                    <div class="ratings">
+                        <h2>RATINGS:</h2>
+                        <input type="radio" id="star1" name="rate" value="1">
+                        <label for="star1" title="text">1 star</label>
+    
+                        <input type="radio" id="star2" name="rate" value="2">
+                        <label for="star2" title="text">2 stars</label>
+    
+                        <input type="radio" id="star3" name="rate" value="3">
+                        <label for="star3" title="text">3 stars</label>
+    
+                        <input type="radio" id="star4" name="rate" value="4">
+                        <label for="star4" title="text">4 stars</label>
+    
+                        <input type="radio" id="star5" name="rate" value="5">
+                        <label for="star5" title="text">5 stars</label>
+                        <h2>0 out of 5</h2>
+                    </div>
+                    <hr>
+                    <div class="reviews">
+                        <h2>Top Review:</h2>
+                    </div>
+                </div>
+                <div class="unit3">
+                    <img src="images/elgatto.jpg" class="reviewer">
+                    <div class="review-text">
+                        <p>wow! what a great place and such a top tier service!!!</p>
+                    </div>
+                    <div class="reaction">
+                        <button class="like"><img src="images/dislike_light.png"></button>
+                        <button class="dislike"><img src="images/like_light.png"></i></button>
+                    </div>
                 </div>
             </div>
-            <div class="unit2">
-                <div class="ratings">
-                    <h2>RATINGS:</h2>
-                    <input type="radio" id="star1" name="rate" value="1">
-                    <label for="star1" title="text">1 star</label>
-
-                    <input type="radio" id="star2" name="rate" value="2">
-                    <label for="star2" title="text">2 stars</label>
-
-                    <input type="radio" id="star3" name="rate" value="3">
-                    <label for="star3" title="text">3 stars</label>
-
-                    <input type="radio" id="star4" name="rate" value="4">
-                    <label for="star4" title="text">4 stars</label>
-
-                    <input type="radio" id="star5" name="rate" value="5">
-                    <label for="star5" title="text">5 stars</label>
-                    <h2>0 out of 5</h2>
-                </div>
-                <hr>
-                <div class="reviews">
-                    <h2>REVIEWS: </h2>
-                </div>
-            </div>
-            <div class="unit3">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqk3cChlBKRLooYps9Jl0570TZ8U-BwASLOWrgveTgZQ&s" class="reviewer">
-                <div class="review-text">
-                    <p>wow! what a great place and such a top tier service!!!</p>
-                </div>
-                <div class="reaction">
-                    <button class="like"><i class="fa-regular fa-thumbs-up fa-2x"></i></button>
-                    <p class="helpful">Helpful!</p>
-                    <button class="dislike"><i class="fa-regular fa-thumbs-down fa-2x"></i></button>
-                    <p class="unhelpful">Unhelpful!</p>
-                </div>
-            </div>
-        </div>
     </div>
 </body>
 </html>
