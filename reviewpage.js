@@ -10,6 +10,42 @@ function toggleDropdown() {
     }
 }
 
+function togglePopup() {
+    var popup = document.getElementById("popup-create");
+    if (popup.style.display === "none") {
+        popup.style.display = "block";
+    } else {
+        popup.style.display = "none";
+    }
+}
+function changeColor(button) {
+    if (button.classList.contains('clicked')) {
+        // If the button is already clicked, revert the colors
+        button.style.backgroundColor = '#d1ae8d'; // Revert to the default background color
+        button.style.borderColor = '#d1ae8d'; // Revert to the default border color
+        button.style.color = 'white'; // Revert to the default text color
+        button.classList.remove('clicked'); // Remove the 'clicked' class
+    } else {
+        // If the button is not clicked, apply the new colors
+        button.style.backgroundColor = '#F4E4C9';
+        button.style.borderColor = '#4D2D18';
+        button.style.color = '#000'; // Change color to black or any other valid color value
+        button.classList.add('clicked'); // Add the 'clicked' class
+    }
+}
+
+function openModal() {
+    var modal = document.getElementById("myModal");
+    var img = document.getElementById("image");
+    var modalImg = document.getElementById("modal-image");
+    modal.style.display = "block";
+    modalImg.src = img.src;
+  }
+  
+  function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+  }  
 
 
 function toggleDropdown2() {

@@ -34,6 +34,49 @@
         </div>
     </div>
     <div class ="review-panel">
+            <div class="plus-sign" onclick="togglePopup()">+</div>
+            <div class="popup-create" id="popup-create" style="display: none;">
+            <div class="popup-content">
+                <span class="x" onclick="togglePopup()">
+                    <img src="images/xicon.png" class="close">
+                </span>
+                <p class = "experience">Tell us, how was your experience</p>
+                <div class="ratings-popup">
+                    <input type="radio" id="star5" name="rate" value="5">
+                    <label for="star5" title="Excellent">★</label>
+                
+                    <input type="radio" id="star4" name="rate" value="4">
+                    <label for="star4" title="Very Good">★</label>
+                
+                    <input type="radio" id="star3" name="rate" value="3">
+                    <label for="star3" title="Fair">★</label>
+                
+                    <input type="radio" id="star2" name="rate" value="2">
+                    <label for="star2" title="Tolerable">★</label>
+                
+                    <input type="radio" id="star1" name="rate" value="1">
+                    <label for="star1" title="Poor">★</label>
+                </div>
+                <div class="categorized">
+                    <button class="button1" onclick="changeColor(this)">Budget Friendly</button>
+                    <button class="button2" onclick="changeColor(this)">Study Friendly</button>
+                    <span class="note">*Can be left empty</span>
+                </div>
+                <p class = "titleyour">Title your review</p>
+                <input type="text" id="review-title" class="review-title" placeholder="Enter your Title...">
+                <p class = "writeyour">Write your review</p>
+                <input type="text" id="review-words" class="review-words" placeholder="Enter your Review...">
+                <input type="file" id="image-upload" class="image-upload" accept="image/*">
+                <div class="button-container">
+                    <a href="reviewpage.html" class="search-anchor">
+                        <button type="submit" class="submit">Submit</button>
+                    </a>
+                    
+                </div>
+                
+            </div>
+
+        </div>
         <span class = "namecafe">Prelude Cafe and Restaurant</span>
         <span class = "loc"> 810 Castro Street , Manila, Philippines</span>
         <div class = "about">
@@ -50,7 +93,7 @@
         </div>
         <hr class = "hrabout">
         <div class="rating">5.0</div>
-        <div class="noofreviews">30 reviews</div>
+        <div class="noofreviews">2 reviews</div>
         </div>
         <div class="slideshow-container">
             <div class="slide">
@@ -58,20 +101,12 @@
                 
             </div>
             <div class="slide">
-                <img src="images/obsecure.png" class="pics" />
+                <img src="images/food.jpg" class="pics" />
             </div>
             <div class="slide">
-                <img src="images/dripkofi.png" class="pics" />
+                <img src="images/menu.jpg" class="pics" />
             </div>
-            <div class="slide">
-                <img src="images/cloudscape.png" class="pics" />
-            </div>
-            <div class="slide">
-                <img src="images/tomo.png" class="pics" />
-            </div>
-            <div class="slide">
-                <img src="images/starbs.png" class="pics" />
-            </div>
+            
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -79,9 +114,7 @@
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
                 <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+
             </div>
         </div>
         <hr class="divider">
@@ -91,6 +124,13 @@
                 <button class = "threedot" onclick="toggleDropdown2()"> 
                     <img src="images/options.png"> 
                 </button>
+                <div class="reaction">
+                    <button class="helpful"><img src="images/thumb.png"></button>
+                    <span class = "numberofreact">2</span>
+                    <button class="unhelpful"><img src="images/thumbdown.png"></i></button>
+                    <span class = "numberofreact">5</span>
+                </div>
+    
                 <div class="dropdown-content2" id="dropdownContent2">
                     <a href="sign-up.html">Edit</a>
                    
@@ -102,8 +142,23 @@
                     </div>
                     <div class="username"><a href="profile.html">hello_tim</a></div>
                 </div>                
-                <div class="review-content">
-                    <!-- Review text and other relevant information -->
+                <div class="review-content">             
+                    <div class="ratings">
+                        <input type="radio" id="star1" name="rate" value="1">
+                        <label for="star1" title="text">1 star</label>
+    
+                        <input type="radio" id="star2" name="rate" value="2">
+                        <label for="star2" title="text">2 stars</label>
+    
+                        <input type="radio" id="star3" name="rate" value="3">
+                        <label for="star3" title="text">3 stars</label>
+    
+                        <input type="radio" id="star4" name="rate" value="4">
+                        <label for="star4" title="text">4 stars</label>
+    
+                        <input type="radio" id="star5" name="rate" value="5">
+                        <label for="star5" title="text">5 stars</label>
+                    </div>
                     <div class="title">
                         Amazing Place
                     </div>
@@ -116,8 +171,67 @@
                 </div>
             </div>
             <hr class = "div">
-            
+            <div class="review-box">
+                <button class = "threedot" onclick="toggleDropdown2()"> 
+                    <img src="images/options.png"> 
+                </button>
+                <div class="reaction">
+                    <button class="helpful"><img src="images/thumb.png"></button>
+                    <span class = "numberofreact">2</span>
+                    <button class="unhelpful"><img src="images/thumbdown.png"></i></button>
+                    <span class = "numberofreact">5</span>
+                </div>
+    
+                <div class="dropdown-content2" id="dropdownContent2">
+                    <a href="sign-up.html">Edit</a>
+                   
+                    <a href="profile.html">Delete</a>
+                </div>
+                <div class="profile-info">
+                    <div class="profile-pic">
+                        <img src="images/dog.jpg" alt="Profile Picture" />
+                    </div>
+                    <div class="username"><a href="profile.html">hello_tim</a></div>
+                </div>                
+                <div class="review-content">             
+                    <div class="ratings">
+                        <input type="radio" id="star1" name="rate" value="1">
+                        <label for="star1" title="text">1 star</label>
+    
+                        <input type="radio" id="star2" name="rate" value="2">
+                        <label for="star2" title="text">2 stars</label>
+    
+                        <input type="radio" id="star3" name="rate" value="3">
+                        <label for="star3" title="text">3 stars</label>
+    
+                        <input type="radio" id="star4" name="rate" value="4">
+                        <label for="star4" title="text">4 stars</label>
+    
+                        <input type="radio" id="star5" name="rate" value="5">
+                        <label for="star5" title="text">5 stars</label>
+                    </div>
+                    <div class="title">
+                        I WILL GO BACK AGAIN!
+                    </div>
+                    <div class="paragraph">
+                        Nice Place!
+                    </div>
+                    <div class="images-container">
+                        <img src="images/doggy.jpg" class="img" id="image" onclick="openModal()">
+                        <img src="images/doggy.jpg" class="img" id="image" onclick="openModal()">
+                    </div>
+
+                    <div id="myModal" class="modal">
+                      <span class="close"  onclick="closeModal()">&times;</span>
+                      <img class="modal-content" id="modal-image">
+                    </div>
+                    <div class = "date">
+                        05/05/02024
+                    </div>
+                </div>
+            </div>
         </div>
+        <hr class = "div">
             
     </div>
 
