@@ -208,7 +208,7 @@ body {
     width: 500px;
     height: 250px;
     border-radius: 15px;
-    background-color: #cbaf91;
+    background-color: #d1ae8d;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -216,6 +216,13 @@ body {
     z-index: 1;
     margin: 50px;
     margin-bottom: -5px;
+}
+hr{
+    width: 90%;
+    border-color: #4D2D18;
+    border-width: 1px;
+    opacity: 0.5;
+
 }
 
 #unit1-background1 {

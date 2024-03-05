@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
 
 body {
-    margin: 0;
-    padding: 50px;
-    background-color: #e8d3b2;
+    background-color: #F4E4C9;
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-family: 'poppins';
+    margin-left: 0%;
 }
 
 hr {
@@ -15,38 +14,282 @@ hr {
     background-color: black;
 }
 
-.slideshow {
-    position: relative;
+.namecafe{
+    color: #4D2D18;
+    font-size: 35px;
+    margin-left: 90px;
+    margin-top: 20px;
+    font-weight: 800;
 }
 
-.slideshow img[name="slide"] {
-    height: 300px;
-    width: 100%;
-    z-index: 0;
+.loc{
+    font-size: 20px;
+    color: #fff;
+    margin-left: 90px;
+    
 }
 
-.slideshow button {
-    height: 70px;
-    width: 35px;
-    z-index: 1;
+.divider{
+    margin-top: 480px;
+    width: 1100px;
+    height: 1px;
+    opacity: 0.5;
+    background-color: #4D2D18;
+    border: #593f2b;
+}
+
+.slideshow-container {
     position: absolute;
-    opacity: 0.2;
+    z-index: 1;
+    height: 300px;
+    width: 480px;
+    margin-left: 635px;
+    margin-top: 155px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
-.slideshow button:hover {
+.pics{
+    height: 350px;
+    width: 550px;
+    border-radius: 5px;
+}
+
+.slide{
+    height: 350px;
+    width: 550px;
+    display: none;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: transform 0.5s ease;
+}
+
+
+.slide.active {
+    display: block;
     opacity: 1;
-    background-color: wheat;
+    transform: translateX(0);
 }
 
-.slideshow #previous {
-    left: 10px;
-    top: 40%;
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 100; 
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    padding: 10px;
+    padding-right: -30px;
+    background-color: rgba(244, 228, 201);
 }
 
-.slideshow #next {
-    right: 10px;
-    top: 40%;
+.next {
+    left: 520px;
+    border-radius: 3px 0 0 3px;
 }
+
+.prev:hover, .next:hover {
+    background-color: rgba(209,174,141,0.8)
+}
+
+.dot-container {
+  margin-left: 50px;
+  position: relative; 
+  width: 100%;
+  text-align: center;
+  margin-top: 325px; 
+  z-index: 1;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 6px;
+  width: 6px; 
+  margin: 0 5px; 
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  bottom: 5px;
+  z-index: 1;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+.active-link {
+          font-weight: 700;
+      }
+
+.about{
+    background-color: #d1ae8d; 
+    position: absolute;
+    height: 400px;
+    width: 480px;
+    margin-left: 80px;
+    margin-top: 130px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.category {
+    display: flex;
+    flex-direction: row;
+    color: #4D2D18;
+    margin-top: 10px; /* Adjust margin as needed */
+    margin-left: 35px;
+}
+
+.hrabout{
+    border: none;
+    opacity: 0.4;
+    width: 400px;
+    height: 1px;
+    margin-top: 30px;
+}
+
+
+.rating {
+    margin-bottom: 10px; /* Adjust margin as needed */
+    font-weight: 700;
+    font-size: 45px;
+    margin-top: 13px;
+    color: white;
+    margin-left: 40px;
+}
+
+.review-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make the image round */
+    overflow: hidden; /* Ensure content outside the border-radius is hidden */
+}
+
+.profile-pic img{
+    width: 50px;
+    height: 50px;
+}
+
+.div{    
+    width: 1100px;
+    height: 1px;
+    opacity: 0.5;
+    background-color: #4D2D18;
+    border: #593f2b;
+}
+
+.username a{
+    margin-left: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #4D2D18;
+}
+
+.review-content{
+    margin-top: 20px;
+}
+
+.title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.paragraph{
+    margin-top: 5px;
+}
+
+.username a:hover{
+    text-decoration: underline;
+}
+
+.date{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.threedot{
+    margin-top: 12px;
+    position: absolute;
+    right: 140px;
+    background: none;
+    border: none;
+
+}
+
+.threedot img{
+    width: 20px;
+    height: 20px;
+}
+
+.review-box{
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.noofreviews {
+    font-size: 15px; /* Adjust font size as needed */
+    color: gray; /* Adjust color as needed */
+    margin-left: 343px; /* Add margin between rating and reviews */
+    margin-top: -47px;
+    position: absolute;
+}
+
+.reviews{
+    color: #4D2D18;
+    margin-left: 80px;
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.category div {
+    display: flex; /* Add this line */
+    align-items: center; /* Center text vertically */
+    font-size: 12px;
+    font-weight: 600;
+    height: 30px;
+    background-color: #F4E4C9;
+    padding: 10px 10px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.category1,
+.category2 {
+    width: auto; /* Adjust width dynamically based on content */
+}
+
+
+.desc{
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin-right: 100px;
+    margin-left: 10px;
+}
+
 
 .post-box {
     display: flex;
@@ -56,6 +299,7 @@ hr {
     padding: 15px;
     border: 3px solid black;
     margin-bottom: 50px;
+    margin-top: 500px;
 }
 
 .name-and-rating {
@@ -176,4 +420,226 @@ hr {
 
 .st {
     color: green;
+}
+
+
+.user-icon-container {
+    margin-right: -30px; 
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+      
+}
+
+.user-button img {
+    width: 50px; 
+    height: 50px;
+}
+
+.user-button img.scrolled {
+    content: url("images/usericon\ dark.png");
+    width: 50px;
+    height: 50x;
+}
+
+.upperpanel{
+    background-color:#d1ae8d; 
+    position:absolute;
+    width: 100%;
+    height: 500px;
+    margin-top: 60px;
+    margin-left: -10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d1ae8d;
+    width:  150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+    z-index: 1;
+    left: -48px; /* Adjust the position as per your requirement */
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.dropdown-content a {
+    color: #ffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid transparent; /* Add border */
+    width:  115px;
+}
+
+.dropdown-content a:hover {
+    background-color: #F4E4C9;
+    border-radius: 10px;
+}
+
+
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    background-color: #d1ae8d;
+    width:  150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+    z-index: 1;
+    right: 80px;
+    margin-top: 40px;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.dropdown-content2 a {
+    color: #ffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid transparent; /* Add border */
+    width:  115px;
+}
+
+.dropdown-content2 a:hover {
+    background-color: #F4E4C9;
+    border-radius: 10px;
+}
+
+
+
+
+.user-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+
+.navbar {
+    width: 100%;
+    height: 30px;
+    position:fixed;
+    top: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #d1ae8d; 
+    transition: background-color 0.3s ease; 
+    z-index: 10; 
+}
+
+
+.cafestlogo {
+    margin-left: 50px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+.webname {
+    margin-top: 5px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 50px; 
+    color: #333; 
+}
+
+.navbar a {
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    padding: 8px 12px; 
+    background-color: transparent; 
+    border: none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+
+
+ul {
+    margin-left: 350px;
+    list-style:none;
+}
+
+ul li{
+    margin-top: 17px;
+    display:inline-block; 
+    padding:0 10px; 
+    position:relative;
+    margin-left: 3px;
+    margin-bottom: 10px;
+}
+
+  ul li:not(:last-child)::after{
+    content:""; 
+    border:5px solid #4D2D18;
+    border-width: 5px 1px 0 0;
+    position:absolute; 
+    right:3px; 
+    top:0; 
+    height:10px;
+  }
+
+.review-panel{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.navbar.scrolled a{
+    color: #4D2D18;
+}
+
+.navbar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 60px;
+}
+
+
+.cafe{
+    margin-left: 60px;
+    font-size: xx-large; 
+    color: #4D2D18;
+}
+
+.st{
+    
+    font-size:x-large;
+    color: #20683D;
+}
+
+.cafestlogo {
+    margin-left: 50px;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+}
+
+.webname:hover {
+    text-decoration: none;
+    color: #d1ae8d;
+}
+
+.navbar.scrolled{
+    background-color: #F4E4C9;
+    opacity: .98;
 }
