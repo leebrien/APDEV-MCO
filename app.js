@@ -56,5 +56,5 @@ app.use('/signup', signupRoutes);
 app.use('/signin', signinRoutes);
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on http://localhost:27017`);
 });
