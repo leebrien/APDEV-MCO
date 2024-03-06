@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 50px;
+    background-color: #e8d3b2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'poppins';
+}
+
+hr {
+    height: 3px;
+    background-color: black;
+}
+
+.slideshow {
+    position: relative;
+}
+
+.slideshow img[name="slide"] {
+    height: 300px;
+    width: 100%;
+    z-index: 0;
+}
+
+.slideshow button {
+    height: 70px;
+    width: 35px;
+    z-index: 1;
+    position: absolute;
+    opacity: 0.2;
+}
+
+.slideshow button:hover {
+    opacity: 1;
+    background-color: wheat;
+}
+
+.slideshow #previous {
+    left: 10px;
+    top: 40%;
+}
+
+.slideshow #next {
+    right: 10px;
+    top: 40%;
+}
+
+.post-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #cbaf91;
+    padding: 15px;
+    border: 3px solid black;
+    margin-bottom: 50px;
+}
+
+.name-and-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.star-holder a {
+    opacity: 0.5;
+    font-size: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.comment-section textarea {
+    height: 70px;
+    width: 100%;
+    resize: none;
+}
+
+.reviews-container {
+    background-color: rgba(198,176,149,255);
+    border: 3px solid black;
+    margin-bottom: 50px;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.review-and-button-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-and-button-holder .past-review {
+    flex-grow: 2;
+}
+
+.review-and-button-holder a {
+    opacity: 0.5;
+    font-size: 45px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.review-and-button-holder a:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.past-review {
+    padding: 5px;
+    border: 3px solid black;
+    background-color: white;
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: #cbaf91;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -50px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+    margin-top: -50px;
+    padding-left: 35px;
+}
+
+.header .logo-and-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .nav-and-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img, .header button {
+    height: 100%;
+    width: 120px;
+}
+
+.header button {
+    padding-left: 0;
+    color: white;
+}
+
+.header li {
+    float: left;
+    padding: 25px;
+    list-style-type: none;
+    color: #a3907a;
+}
+
+.li-home:hover, .li-reg:hover, .li-login:hover {
+    background-color: #d5bfa7;
+}
+
+.header a {
+    color: wheat;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.cafe, .st {
+    font-size: 30px;
+}
+
+.cafe {
+    color: #593f2b;
+}
+
+.st {
+    color: green;
+}
