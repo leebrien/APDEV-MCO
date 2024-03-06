@@ -1,123 +1,139 @@
-var images = ['img1.jpg', 'img2.jpg', 'img3.jpg'];
-var i = 0;
-var slider_img = document.querySelector('.slideshow img');
 
-function setImg(){
-    return slider_img.setAttribute('src', 'images/'+images[i]);
+var slideIndex = 0;
+
+function toggleDropdown() {
+    var dropdownContent = document.getElementById("dropdownContent");
+    if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+    } else {
+        dropdownContent.style.display = "block";
+    }
 }
 
-function previous() {
-    if (i == 0){                     //  img is already at the start of array
-        i = images.length;
+function togglePopup() {
+    var popup = document.getElementById("popup-create");
+    if (popup.style.display === "none") {
+        popup.style.display = "block";
+    } else {
+        popup.style.display = "none";
     }
-    i--;
-    return setImg();
+}
+function changeColor(button) {
+    if (button.classList.contains('clicked')) {
+        // If the button is already clicked, revert the colors
+        button.style.backgroundColor = '#d1ae8d'; // Revert to the default background color
+        button.style.borderColor = '#d1ae8d'; // Revert to the default border color
+        button.style.color = 'white'; // Revert to the default text color
+        button.classList.remove('clicked'); // Remove the 'clicked' class
+    } else {
+        // If the button is not clicked, apply the new colors
+        button.style.backgroundColor = '#F4E4C9';
+        button.style.borderColor = '#4D2D18';
+        button.style.color = '#000'; // Change color to black or any other valid color value
+        button.classList.add('clicked'); // Add the 'clicked' class
+    }
 }
 
-function next(){
-    if (i == images.length - 1){    //  img is already at the end of array
-        i = -1;
+function openModal() {
+    var modal = document.getElementById("myModal");
+    var img = document.getElementById("image");
+    var modalImg = document.getElementById("modal-image");
+    modal.style.display = "block";
+    modalImg.src = img.src;
+  }
+  
+  function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+  }  
+
+
+function toggleDropdown2() {
+    var dropdownContent2 = document.getElementById("dropdownContent2");
+    if (dropdownContent2.style.display === "block") {
+        dropdownContent2.style.display = "none";
+    } else {
+        dropdownContent2.style.display = "block";
     }
-    i++;
-    return setImg();
 }
 
-//  --------------------------   Logic for 5 star rating   --------------------------
-var star1 = document.getElementById("star1");
-var star2 = document.getElementById("star2");
-var star3 = document.getElementById("star3");
-var star4 = document.getElementById("star4");
-var star5 = document.getElementById("star5");
+window.addEventListener('scroll', () => {
+    const userIcon = document.querySelector('.user-button img');
+    const navbar = document.querySelector('.navbar');
 
-star1.addEventListener("click", () => {
-    star1.style.opacity = 1;
-    star2.style.opacity = 0.5;
-    star3.style.opacity = 0.5;
-    star4.style.opacity = 0.5;
-    star5.style.opacity = 0.5;
-});
-
-star2.addEventListener("click", () => {
-    star1.style.opacity = 1;
-    star2.style.opacity = 1;
-    star3.style.opacity = 0.5;
-    star4.style.opacity = 0.5;
-    star5.style.opacity = 0.5;
-});
-
-star3.addEventListener("click", () => {
-    star1.style.opacity = 1;
-    star2.style.opacity = 1;
-    star3.style.opacity = 1;
-    star4.style.opacity = 0.5;
-    star5.style.opacity = 0.5;
-});
-
-star4.addEventListener("click", () => {
-    star1.style.opacity = 1;
-    star2.style.opacity = 1;
-    star3.style.opacity = 1;
-    star4.style.opacity = 1;
-    star5.style.opacity = 0.5;
-});
-
-star5.addEventListener("click", () => {
-    star1.style.opacity = 1;
-    star2.style.opacity = 1;
-    star3.style.opacity = 1;
-    star4.style.opacity = 1;
-    star5.style.opacity = 1;
-});
-
-//  --------------------------   Logic for like/dislike   --------------------------    
-var like = document.getElementById("like");
-var dislike = document.getElementById("dislike");
-var likeCounter = 0;
-var dislikeCounter = 0;
-var liked = false;
-var disliked = false;
-var touchedLike = false;
-var touchedDislike = false;
-
-var currentLikes = document.getElementById("like-count");
-var currentDislikes = document.getElementById("dislike-count");
-
-like.addEventListener("click", () => {
-    if (!touchedLike){
-        touchedLike = true;
+    if (window.scrollY > 0) {
+        userIcon.classList.add('scrolled');
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+        userIcon.classList.remove('scrolled');
     }
+});
+
+
+function showSlides() {
+    var i;
+
+
+    slides = document.getElementsByClassName("slide");
+    dots = document.getElementsByClassName("dot");
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }    
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
     
-    if (!liked){
-        liked = true;
-        disliked = false;
-        like.style.opacity = 1;
-        dislike.style.opacity = 0.5;
-        likeCounter++;
-        currentLikes.textContent = likeCounter;
-    }
+    setTimeout(showSlides, 4000); 
+}
 
-    if (touchedDislike){
-        dislikeCounter--;
-        currentDislikes.textContent = dislikeCounter;
-    }
+document.addEventListener("DOMContentLoaded", function() {
+   
+    showSlides();
 });
 
-dislike.addEventListener("click", () => {
-    if (!touchedDislike){
-        touchedDislike = true;
+function plusSlides(position) {
+    slideIndex += position;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    } else if (slideIndex < 1) {
+        slideIndex = slides.length;
     }
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+}
 
-    if (!disliked){
-        disliked = true;
-        liked = false;
-        dislike.style.opacity = 1;
-        like.style.opacity = 0.5;
-        dislikeCounter++;
-        currentDislikes.textContent = dislikeCounter;
+function currentSlide(index) {
+    if (index > slides.length) {
+        index = 1;
+    } else if (index < 1) {
+        index = slides.length;
     }
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[index-1].style.display = "block";  
+    dots[index-1].className += " active";
+}
 
-    if (touchedLike){
-        likeCounter--;
-        currentLikes.textContent = likeCounter;
-    }
-});
+
+

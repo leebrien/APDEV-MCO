@@ -39,7 +39,7 @@ function toggleDropdown() {
 document.querySelector('.next-slide').addEventListener('click', function() {
     var nextSlideButton = document.querySelector('.next-slide');
 
-    nextSlideButton.src = 'images/back.png';
+    nextSlideButton.src = '../../images/back.png';
 });
 
 

@@ -16,7 +16,7 @@ document.getElementById("signinbutton").addEventListener("click", function() {
 
 function signIn() {
     var userIcon = document.getElementById('icon');
-    userIcon.src = "images/dog.jpg"; // Change the source to the signed-in user icon image path
+    userIcon.src = "../../images/dog.jpg"; // Change the source to the signed-in user icon image path
 }
 function loadFile(event) {
 	var reader = new FileReader();

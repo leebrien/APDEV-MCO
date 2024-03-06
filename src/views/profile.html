@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
-    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="../../public/styles/profile.css">
 </head>
 
 <body>
     <div class="header">
 
-        <img class="logo" src="images/Logo.png">
-        <img class = "designdot4" src="images/dots.png">
+        <img class="logo" src="../../images/Logo.png">
+
 
         <div class="logo-name">
             <p class="web-name"><span class="Cafe-title">Cafe</span> <span class="St.-title">St.</span></p>
@@ -25,7 +25,7 @@
         <div class="user-icon-container">
             <button class="user-button">
                 <a href="other-profile.html">
-                    <img src="images/usericon.png" alt="User Icon" class="user">
+                    <img src="../../images/usericon.png" alt="User Icon" class="user">
                 </a>
             </button>
         </div>
@@ -34,14 +34,14 @@
     <div class="cover">
         <div class="cover-img">
             <label for="coverImageUpload" class="edit-cover-pic">
-                <img src="images/dog.jpg" id="coverPic" alt="Cover image" class="coverImg">
+                <img src="../../images/dog.jpg" id="coverPic" alt="Cover image" class="coverImg">
             </label>
             <input id="coverImageUpload" type="file" accept="image/*" onchange="loadCover(event)"
                 style="display: none;">
         </div>
         <div class="profile-img">
             <label for="profileImageUpload" class="edit-profile-pic">
-                <img src="images/doggy.jpg" id="profilePic" alt="Profile image" class="profile">
+                <img src="../../images/doggy.jpg" id="profilePic" alt="Profile image" class="profile">
             </label>
             <input id="profileImageUpload" type="file" accept="image/*" onchange="loadProfile(event)"
                 style="display: none;">
@@ -49,13 +49,13 @@
     </div>
 
     <div class="profile-upper">
-        <img class = "designdot" src="images/dots.png">
+        <img class = "designdot" src="../../images/dots.png">
         <div class="profile-name">
             <b><span class="username">Doggy Puppy</span></b><br>
             <i><b><span class="realname">@Rami</span></b></i>
 
             <div class="edit" onclick="openEditPopup()">
-                <img src="images/draw.png">
+                <img src="../../images/draw.png">
             </div>
         </div>
 
@@ -78,11 +78,11 @@
         <span class="bio">Hello, I am a Dog !</span>
     </div>
 
-    <img class = "designdot2" src="images/dots.png">
+    <img class = "designdot2" src="../../images/dots.png">
 
     <div class="profile-reviews-container">
         
-        <img class = "designdot3" src="images/dots.png">
+        <img class = "designdot3" src="../../images/dots.png">
         <a id="prevButton" class="prev" onclick="prevSlide()">&#10094;</a>
         <a id="nextButton" class="next" onclick="nextSlide()">&#10095;</a>
 
@@ -94,7 +94,7 @@
 
         <div id="profile-reviews-set1" class="profile-reviews" data-visible="true">
             <div class="review1-container">
-                <img src="images/preludelogo.jpg" class="review1">
+                <img src="../../images/preludelogo.jpg" class="review1">
 
                 <div class="review1-review">
                     <br>
@@ -114,7 +114,7 @@
             </div>
 
             <div class="review2-container">
-                <img src="images/dripkofilogo.jpg" class="review2">
+                <img src="../../images/dripkofilogo.jpg" class="review2">
 
                 <div class="review2-review">
                     <br>
@@ -133,7 +133,7 @@
             </div>
 
             <div class="review3-container">
-                <img src="images/sblogo.jpg" class="review3">
+                <img src="../../images/sblogo.jpg" class="review3">
 
                 <div class="review3-review">
                     <br>
@@ -156,7 +156,7 @@
          <!-- Second Page -->
          <div id="profile-reviews-set2" class="profile-reviews" data-visible="false">
             <div class="review1-container">
-                <img src="images/obsecurelogo.jpg" class="review1">
+                <img src="../../images/obsecurelogo.jpg" class="review1">
 
                 <div class="review1-review">
                     <br>
@@ -176,7 +176,7 @@
 
            
             <div class="review2-container">
-                <img src="images/tomologo.jpg" class="review2">
+                <img src="../../images/tomologo.jpg" class="review2">
 
                 <div class="review2-review">
                     <br>

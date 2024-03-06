@@ -25,6 +25,8 @@ body {
     background-color: #F4E4C9; 
 }
 
+
+
 .container {
     position: relative;
     justify-content: center;
@@ -68,6 +70,11 @@ body {
     margin-left: 10%;
 }
 
+.web-name {
+     font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
 /* Website Logo */
 .website-branding {
   position: absolute;
@@ -80,19 +87,49 @@ body {
   }
   
   .website-logo {
-    height: 50px; 
+    height: 75px; 
+    width: 75px;
     margin-right: 10px;
   }
   
   .cafe{
-    font-size: 1.5rem;
+    font-size: 40px; 
     color: #4D2D18;
     margin-right: 5px;
+    font-size: 40px;
+
   }
 
+  .returnbttn{
+    display: block;
+    z-index: 10;
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    z-index: 999; /* Ensure it's above other elements */
+    background: none;
+    width: 80px; /* Adjust width if needed */
+    height: 80px; /* Adjust height if needed */
+    margin-left: 10px;
+    cursor: pointer;
+    background: url("images/return.png");
+}
+
+.returnbttnimg{
+    width: 90px; /* Adjust width if needed */
+    height: 90px; /* Adjust height if needed */
+  
+}
+
+.returnbttn:hover{
+    color: white;
+    opacity: 0.5;
+}
+
   .st{
-    font-size: 1.5rem;
     color: #20683D;
+    font-size:30px;
+    margin-left: -10px;
   }
   
   .container.sign-up .website-branding {

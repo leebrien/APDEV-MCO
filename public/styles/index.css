@@ -368,7 +368,7 @@ ul li{
 }
 
 .user-button img.scrolled {
-    content: url("images/usericon\ dark.png");
+    content: url("../../images/usericon\ dark.png");
     width: 50px;
     height: 50x;
 }
@@ -690,7 +690,7 @@ hr{
 }
 
 .type {
-    background-image: url("images/searchicon.png"); 
+    background-image: url("../../images/searchicon.png"); 
     background-size: 20px; 
     background-position: 10px center; 
     background-repeat: no-repeat; 
@@ -731,7 +731,7 @@ hr{
     align-items: center;
     justify-content: center;
     color: #d1ae8d;
-    background-image: url("images/cafeheaders/cloudscapeh.png");
+    background-image: url("../../images/cafeheaders/cloudscapeh.png");
     background-position: 20px center; 
     border: none; 
     border-radius: 5px;
@@ -764,7 +764,7 @@ hr{
     align-items: center;
     justify-content: center;
     color: #d1ae8d;
-    background-image: url("images/cafeheaders/preludeh.png");
+    background-image: url("../../images/cafeheaders/preludeh.png");
     background-position: 20px center;
     border: none; 
     border-radius: 5px;
@@ -995,7 +995,7 @@ hr{
     height: 350px;
     width: 275px;
     color: #d1ae8d;
-    background-image: url("images/cafeheaders/obsecureh.png");
+    background-image: url("../../images/cafeheaders/obsecureh.png");
     background-position: right ;
     cursor: pointer;
     padding: 0;
@@ -1019,7 +1019,7 @@ hr{
     height: 350px;
     width: 275px;
     color: #d1ae8d;
-    background-image: url("images/cafeheaders/dripkofih.png");
+    background-image: url("../../images/cafeheaders/dripkofih.png");
     background-position: 15px 20px;
     cursor: pointer;
     padding: 0;
@@ -1059,7 +1059,7 @@ hr{
     align-items: center;
     justify-content: center;
     color: #d1ae8d;
-    background-image: url("images/cafeheaders/starbsh.png");
+    background-image: url("../../images/cafeheaders/starbsh.png");
     background-position: 20px right; 
     border: none;
     border-radius: 5px;
@@ -1079,7 +1079,7 @@ hr{
     align-items: center;
     justify-content: center;
     color: #d1ae8d;
-    background-image: url("images/cafeheaders/tomoh.png");
+    background-image: url("../../images/cafeheaders/tomoh.png");
     background-position: 20px right; 
     border: none; 
     border-radius: 5px;
@@ -1113,7 +1113,7 @@ hr{
     height: 350px;
     width: 275px;
     color: #d1ae8d;
-    background-image: url("images/cafeheaders/dripkofih.png");
+    background-image: url("../../images/cafeheaders/dripkofih.png");
     background-position: 15px 20px;
     cursor: pointer;
     padding: 0;
@@ -1134,7 +1134,7 @@ hr{
     height: 350px;
     width: 275px;
     color: #d1ae8d;
-    background-image: url("images/cafeheaders/obsecureh.png");
+    background-image: url("../../images/cafeheaders/obsecureh.png");
     background-position: right center;
     cursor: pointer;
     padding: 0;
@@ -1154,7 +1154,7 @@ hr{
     height: 350px;
     width: 275px;
     color: #d1ae8d;
-    background-image: url("images/cafeheaders/tomoh.png");
+    background-image: url("../../images/cafeheaders/tomoh.png");
     background-position: right center;
     cursor: pointer;
     padding: 0;
@@ -1406,7 +1406,7 @@ color: #4D2D18;
 
 .next-slide-cafelist2:hover img {
     position: absolute;
-    content: url("images/nextdark.png");
+    content: url("../../images/nextdark.png");
 }
 
 .next-slidecontainer {
@@ -1439,7 +1439,7 @@ color: #4D2D18;
 }
 
 .back-slide:hover{
-    content: url("images/backdark.png");
+    content: url("../../images/backdark.png");
 }
 
 .next-slide img {
@@ -1452,7 +1452,7 @@ color: #4D2D18;
 
 .next-slide:hover img {
     position: absolute;
-    content: url("images/nextdark.png");
+    content: url("../../images/nextdark.png");
 }
 
 .drip {
@@ -1561,7 +1561,7 @@ color: #4D2D18;
     align-items: center;
     justify-content: center;
     color: #d1ae8d;
-    background-image: url("images/cafeheaders/preludeh.png");
+    background-image: url("../../images/cafeheaders/preludeh.png");
     background-position: 20px right; 
     border: none; 
     border-radius: 5px;
@@ -2014,7 +2014,7 @@ hr{
 .uppersidetomo{
     display: flex;
     height: 130px;
-    background-image: url("images/cafeheaders/tomoh.png");
+    background-image: url("../../images/cafeheaders/tomoh.png");
     background-position: 20px center; 
 
 }
@@ -2022,7 +2022,7 @@ hr{
 .uppersidecloudscape{
     display: flex;
     height: 130px;
-    background-image: url("images/cafeheaders/cloudscapeh.png");
+    background-image: url("../../images/cafeheaders/cloudscapeh.png");
     background-position: 20px center;
 
 }
@@ -2031,7 +2031,7 @@ hr{
 .upperside{
     display: flex;
     height: 130px;
-    background-image: url("images/cafeheaders/preludeh.png");
+    background-image: url("../../images/cafeheaders/preludeh.png");
     background-position: 20px center; 
 
 }
@@ -2039,7 +2039,7 @@ hr{
 .uppersidedrip{
     display: flex;
     height: 130px;
-    background-image: url("images/cafeheaders/dripkofih.png");
+    background-image: url("../../images/cafeheaders/dripkofih.png");
     background-position: 20px center;
 
 }
@@ -2047,7 +2047,7 @@ hr{
 .uppersideobsecure{
     display: flex;
     height: 130px;
-    background-image: url("images/cafeheaders/obsecureh.png");
+    background-image: url("../../images/cafeheaders/obsecureh.png");
     background-position:  right; 
 
 }
@@ -2055,7 +2055,7 @@ hr{
 .uppersidesb{
     display: flex;
     height: 130px;
-    background-image: url("images/cafeheaders/starbsh.png");
+    background-image: url("../../images/cafeheaders/starbsh.png");
     background-position:  right; 
 
 }

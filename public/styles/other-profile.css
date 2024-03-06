@@ -132,7 +132,7 @@ ul li{
 }
 
 .user-button img.scrolled {
-    content: url("images/usericon\ dark.png");
+    content: url("../../images/usericon\ dark.png");
     width: 50px;
     height: 50x;
 
