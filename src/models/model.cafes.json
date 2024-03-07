@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "65e722cfa79d8bfc9a28ea69"
+  },
+  "cafename": "Prelude Cafe & Restaurant",
+  "location": {
+    "street": "810 Castro Street",
+    "city": "Manila"
+  },
+  "description": "Feel a cozy atmosphere perfect for enjoying delicious meals and quality time with friends. From their aromatic coffee to their mouthwatering dishes, it's a delightful spot for coffee lovers and food enthusiasts alike.",
+  "averagerating": 3.5,
+  "cafeimages": [
+    ""
+  ],
+  "cafelogo": null
+},
+{
+  "_id": {
+    "$oid": "65e7233ca79d8bfc9a28ea6a"
+  },
+  "cafename": "Obscure Cafe",
+  "location": {
+    "street": "Taft Avenue Corner Castro Street",
+    "city": "Manila"
+  },
+  "description": "Obscure Cafe in Taft, Manila is a hidden gem known for its unique ambiance and artistic vibe. Step into this charming space for specialty brews, delectable treats, and a touch of mystery.",
+  "averagerating": 4,
+  "cafeimages": [
+    ""
+  ],
+  "cafelogo": null
+},
+{
+  "_id": {
+    "$oid": "65e7238aa79d8bfc9a28ea6b"
+  },
+  "cafename": "TOMO Coffee",
+  "location": {
+    "street": "Taft Avenue",
+    "city": "Manila"
+  },
+  "description": "With its trendy decor and artisanal coffee blends, Tomo Coffee in Taft, Manila provides a modern yet relaxed setting for coffee enthusiasts to savor their favorite brews and unwind.",
+  "averagerating": 5,
+  "cafeimages": [
+    ""
+  ],
+  "cafelogo": null
+},
+{
+  "_id": {
+    "$oid": "65e723cba79d8bfc9a28ea6c"
+  },
+  "cafename": "Drip Kofi",
+  "location": {
+    "street": "Taft Avenue",
+    "city": "Manila"
+  },
+  "description": "A Vietnamese-inspired cafe that is also a minimalist cafe that offers authentic Vietnamese coffee, which is made by letting hot water drip through finely-ground coffee.",
+  "averagerating": 3,
+  "cafeimages": [
+    ""
+  ],
+  "cafelogo": null
+},
+{
+  "_id": {
+    "$oid": "65e72417a79d8bfc9a28ea6d"
+  },
+  "cafename": "Starbucks",
+  "location": {
+    "street": "Agno Street",
+    "city": "Manila"
+  },
+  "description": "Starbucks has become a symbol of quality coffee and a cultural icon, serving millions of customers worldwide and shaping the coffee industry with its innovative approach to coffee culture and customer experience.",
+  "averagerating": 2,
+  "cafeimages": [
+    ""
+  ],
+  "cafelogo": null
+}]

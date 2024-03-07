@@ -1,0 +1,65 @@
+[{
+  "_id": {
+    "$oid": "65e71ef8a79d8bfc9a28ea64"
+  },
+  "fullname": {
+    "lastname": "Delos Reyes",
+    "firstname": "Carl Justin"
+  },
+  "username": "carljuDR",
+  "password": "cjdr",
+  "profilepicture": null,
+  "bio": "hello my name is ju!"
+},
+{
+  "_id": {
+    "$oid": "65e71f4fa79d8bfc9a28ea65"
+  },
+  "fullname": {
+    "lastname": "Pidlaoan",
+    "firstname": "Atasha"
+  },
+  "username": "tashi",
+  "password": "ap",
+  "profilepicture": null,
+  "bio": "hello my name is tashi!"
+},
+{
+  "_id": {
+    "$oid": "65e71f78a79d8bfc9a28ea66"
+  },
+  "fullname": {
+    "lastname": "Sanchez",
+    "firstname": "Matthew"
+  },
+  "username": "matthewS",
+  "password": "mos",
+  "profilepicture": null,
+  "bio": "hello my name is matthew!"
+},
+{
+  "_id": {
+    "$oid": "65e71f9ea79d8bfc9a28ea67"
+  },
+  "fullname": {
+    "lastname": "Sandoval",
+    "firstname": "Lee"
+  },
+  "username": "brien",
+  "password": "lbvs",
+  "profilepicture": null,
+  "bio": "hello my name is Lee!"
+},
+{
+  "_id": {
+    "$oid": "65e71fbfa79d8bfc9a28ea68"
+  },
+  "fullname": {
+    "lastname": "Papi",
+    "firstname": "Doggy"
+  },
+  "username": "doggypapi",
+  "password": "papidoggy",
+  "profilepicture": null,
+  "bio": "bark!"
+}]
